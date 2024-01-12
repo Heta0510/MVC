@@ -1,4 +1,18 @@
 MVC != ASP.NET MVC
 
 What is MVC?
---> M - Model,V - View, C - Controller
+--> 1)M - Model,V - View, C - Controller
+2)MVC is a design pattern
+3)MVC pattern is used for building web,mobile, desktop applications etc.
+4)All the majors technologies are using MVC to design web application.
+5)MVC is used by all the technoliges like java,.NET,PHP,Angular etc..  
+
+What is ASP.NET MVC?
+-->1)ASP.NET MVC is a .Net framework which follows MVC design pattern.
+2)ASP.NET MVC is used for web development
+3)ASP.NET MVC provides everything required to build web application using MVC design pattern.
+
+As per Microsoft Official Site-
+"ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives
+you full controll over markup for enjoyable,agile development. ASP.NET MVC includes many features that enables fast,TDD-friendly development 
+for creating sophisicated applications that use the latest web standards"
