@@ -1,1 +1,2 @@
-
+App_Data : All the data which is required for read & write into application
+App_Start : Here you put all the configuration file. Ex-Route configuration, bundle configuration etc.
