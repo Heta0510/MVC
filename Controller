@@ -1,5 +1,13 @@
-One of main pillar of MVC (C-Controller) 
-.cs file
-Inherited from controller class
-Resides in controllers folder
-Has controller convention in name
+What is Controller?
+--> 1)One of main pillar of MVC (C-Controller) 
+2).cs file
+3)Inherited from controller class
+4)Resides in controllers folder
+5)Has controller convention in name
+
+Role of a Controller?
+--> 1) Work with user input (or browser request)
+2)Play an important role in flow of application by handling incoming request and provide data to corresponding view or to browser request.
+
+
+
