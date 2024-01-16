@@ -1,0 +1,5 @@
+One of main pillar of MVC (C-Controller) 
+.cs file
+Inherited from controller class
+Resides in controllers folder
+Has controller convention in name
