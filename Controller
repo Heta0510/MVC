@@ -9,5 +9,11 @@ Role of a Controller?
 --> 1) Work with user input (or browser request)
 2)Play an important role in flow of application by handling incoming request and provide data to corresponding view or to browser request.
 
+Controller-
+Controllers are .cs file which resides in Controllers folder. Controllers are used to handle browser incoming http request, to get data from
+models(if required), provide data to corresponding view or request (directly) and generate response.
+
+
+
 
 
