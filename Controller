@@ -21,6 +21,9 @@ What are Action methods?
 4) By default all Action methods are GET.
 5) An action method can return View, File, Partial View, JSON, string etc..
 
+Parameters in Action Method
+--> Parameters are required to get data which is sent in the URL
+
 
 
 
