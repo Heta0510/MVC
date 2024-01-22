@@ -1,1 +1,5 @@
-
+What is a Model?
+-->1)One of main pillar of MVC (M-Model).
+2).cs file
+3)Model is responsible for data.
+4)In dynamic website data comes from database by models. Once data comes from database, then controller action method returns model to view.
