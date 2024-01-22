@@ -9,3 +9,6 @@ Why View is required?
 -->1)To make your application interactive.
 2)Easy to Use.
 3)To use html and other client side framework.
+
+Add a new View?
+-->1)View are added for a action method.
