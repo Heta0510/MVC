@@ -4,3 +4,8 @@ What is View?
 3)UI of application
 4)Support pure html
 5)Everything which visible to a user on browser view.
+
+Why View is required?
+-->1)To make your application interactive.
+2)Easy to Use.
+3)To use html and other client side framework.
