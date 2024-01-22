@@ -68,6 +68,15 @@ namespace WebApplication2.Controllers
 }
 
 
+New/Existing Controller
+1) A controller should represent an enity
+2) All the operations related to same entity should be in same controller
+New:
+When you need a new entity(example employee, salary, clients etc)
+Existing:
+When you need an operation of a entity. If you already have an related controller than use it otherwise create a new controller and 
+create action method.
+
 
 
 
