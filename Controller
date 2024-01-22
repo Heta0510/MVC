@@ -14,6 +14,14 @@ Controllers are .cs file which resides in Controllers folder. Controllers are us
 models(if required), provide data to corresponding view or request (directly) and generate response.
 
 
+What are Action methods?
+--> 1) A method inside a controller is called as Action Method.
+2) Default return type of Action Method is ActionResult.
+3) Only a public method can be access from http request.
+4) By default all Action methods are GET.
+5) An action method can return View, File, Partial View, JSON, string etc..
+
+
 
 
 
