@@ -21,3 +21,7 @@ Call a View from Browser?
 2)Every call go through Controller
 3)Browser don't even know where he is calling a view or something else.Because its a job of action method. If action method is returning a
 View then browser will display the content.
+
+How  controller find a view?
+-->1)First it search in corresponding view folder(same name in controller).
+2)Then it goes to shared folder.
