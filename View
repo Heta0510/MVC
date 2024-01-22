@@ -14,3 +14,4 @@ Add a new View?
 -->1)View are added for a action method.
 2)Using Solution Explorer.
 3)Using Action method.
+4)Action method return type must be ViewResult or ActionResult.
