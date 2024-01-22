@@ -1,1 +1,6 @@
-
+What is View?
+-->1)One of main pillar of MVC (V-View)
+2).cshtml file (c sharp + html)
+3)UI of application
+4)Support pure html
+5)Everything which visible to a user on browser view.
