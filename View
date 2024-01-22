@@ -15,3 +15,9 @@ Add a new View?
 2)Using Solution Explorer.
 3)Using Action method.
 4)Action method return type must be ViewResult or ActionResult.
+
+Call a View from Browser?
+-->1)In MVC browser can not directly call View.
+2)Every call go through Controller
+3)Browser don't even know where he is calling a view or something else.Because its a job of action method. If action method is returning a
+View then browser will display the content.
