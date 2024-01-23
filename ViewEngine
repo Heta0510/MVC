@@ -28,3 +28,8 @@ Also known as single statement or inline expressions
     ex-@DateTime.Now
 2)@(expression)
     ex-@(5-3)
+
+2)Multiline Syntax
+@{
+//Your code goes here
+}
