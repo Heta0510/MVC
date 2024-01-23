@@ -1,1 +1,8 @@
-
+Why View Engine?
+-->1)Viewengine is responsible for creating HTML for views.
+2)It converts HTML + Programming Language to Pure HTML.
+3)To find corresponding view for Action Method.
+4)To find view from shared folder.
+5)Used to write c# code on views.
+6)Used for HTML helpers.
+7)Used in strongly binding views and many more..
