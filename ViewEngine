@@ -6,3 +6,12 @@ Why View Engine?
 5)Used to write c# code on views.
 6)Used for HTML helpers.
 7)Used in strongly binding views and many more..
+
+Razor:
+1)Razor is a view engine.
+2)Razor is not a new programming language.
+3)View file extension for Razor is .cshtml and .vbhtml.
+4)Available in System.Web.Razor namespace
+5)Writing programming language on view is very easy.
+6)Easy Syntax:
+  "Razor is markup syntax for embedding server side code into web pages"
