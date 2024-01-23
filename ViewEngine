@@ -40,3 +40,11 @@ Two types of comments-
    ex-//code
 2)Multiline
    ex-/*code goes here*/
+
+Escape syntax in Razor:
+1)What if we need to write twitter name?
+example- @heta_patel
+2)To solve this problem Razor Provides @@
+example-@@heta_patel
+
+
