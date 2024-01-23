@@ -15,3 +15,16 @@ Razor:
 5)Writing programming language on view is very easy.
 6)Easy Syntax:
   "Razor is markup syntax for embedding server side code into web pages"
+
+
+Razor Syntax:
+It all begins with @
+1)Single line syntax
+2)Multiline syntax
+
+1)Single Line Syntax
+Also known as single statement or inline expressions
+1)@expression
+    ex-@DateTime.Now
+2)@(expression)
+    ex-@(5-3)
