@@ -33,3 +33,10 @@ Also known as single statement or inline expressions
 @{
 //Your code goes here
 }
+
+Comments:
+Two types of comments-
+1)Single line :
+   ex-//code
+2)Multiline
+   ex-/*code goes here*/
