@@ -19,3 +19,9 @@ For loop-
 {
 //statements
 }
+
+Foreach Loop-
+@foreach(var item in collection)
+{
+//statements
+}
