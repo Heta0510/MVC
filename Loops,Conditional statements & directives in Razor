@@ -1,4 +1,11 @@
 If Statement-
-@if(condition){
-//statement
-}
+1)@if(condition){
+  //statement
+  }
+2)@if(condition){
+  //statement
+  }
+  else
+  {
+   //statement
+  }
