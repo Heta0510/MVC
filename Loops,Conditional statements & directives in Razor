@@ -9,3 +9,7 @@ If Statement-
   {
    //statement
   }
+
+
+Ternary Operator-
+@(condition?statement1:statement2)
