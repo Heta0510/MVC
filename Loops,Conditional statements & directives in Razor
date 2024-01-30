@@ -25,3 +25,7 @@ Foreach Loop-
 {
 //statements
 }
+
+Directives in Razor-
+1) @using(Used to add model class and namespace etc)
+2) @model(Used to provide type of model)
