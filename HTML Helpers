@@ -76,3 +76,6 @@ Use case-
 1)When you have something common for a single view
 2)Best way to avoid code duplicacy in single View
 3)Dont use for common part for different view
+
+
+2.1)Standard HTML helpers-
