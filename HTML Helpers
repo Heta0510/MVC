@@ -1,1 +1,9 @@
-
+HTML helpers-
+1)HTML helpers are methods
+2)This returns HTML strings
+3)These are used on View
+4)In simple terms these are C# methods which are used to return HTML
+5)Using HTML helpers you can render a text box, an area, image tag etc.
+6)MVC has built in HTML helpers
+7)We can create custom helpers also 
+8)Using HTML helpers a view can show model properties and can generate html as per THE TYPE OF PROPERTIES.
