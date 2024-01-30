@@ -15,3 +15,15 @@ Types of HTML helpers-
   2)Strongly Types HTML helpers
   3)Templated HTML helpers
 3)Customer HTML helpers
+
+
+1)Inline HTML helpers
+-- These are created on single view and are used on same page.
+-- Inline helpers can be created using @helper tag
+
+@helper HelperName(parameter)
+{
+//code
+}
+
+@HelperName(parameters)
