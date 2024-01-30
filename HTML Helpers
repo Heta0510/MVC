@@ -7,3 +7,11 @@ HTML helpers-
 6)MVC has built in HTML helpers
 7)We can create custom helpers also 
 8)Using HTML helpers a view can show model properties and can generate html as per THE TYPE OF PROPERTIES.
+
+Types of HTML helpers-
+1)Inline HTML helpers
+2)Built-in HTML helpers
+  1)Standard HTML helpers
+  2)Strongly Types HTML helpers
+  3)Templated HTML helpers
+3)Customer HTML helpers
