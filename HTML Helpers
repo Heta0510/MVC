@@ -81,3 +81,13 @@ Use case-
 2.1)Standard HTML helpers-
 1)These are already created by ASP.NET MVC
 2)These methods have multiple overrides so that we can use as per our requirement.
+
+Standard HTML helpers-
+1)@Html.ActionLink() - Used to create link on HTML Page.
+2)@Html.TextBox() - Used to create text box.
+3)@Html.CheckBox() - used to create Check Box.
+4)@Html.RadioButton() - Used to create RadioButton.
+5)@Html.BeginForm() - used to start form.
+6)@Html.EndForm() - used to end a form.
+7)@Html.DropDownList() - used to create dropdown List.
+8)@Html.Hidden() - used to create Hidden Fields.
