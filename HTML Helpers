@@ -91,3 +91,42 @@ Standard HTML helpers-
 6)@Html.EndForm() - used to end a form.
 7)@Html.DropDownList() - used to create dropdown List.
 8)@Html.Hidden() - used to create Hidden Fields.
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @Html.ActionLink("Click me", "Index", new { name = "Heta"})
+    </div>
+    <br/>
+    @{ 
+        string name = "Heta1";
+    }
+    @Html.TextBox("txtBox1", name, new { id = "CustId",@class= "myCustomClass",style="width:200px"})
+
+    <br/>
+    <br/>
+    @Html.CheckBox("chkBox1", true,new { })
+
+    <br/>
+    <br/>
+    @Html.Password("myPassword")
+</body>
+</html>
+
+ public ActionResult About(string name = null)
+        {
+            return View();
+        }
+
+2.2)Strongly Type HTML helpers:
