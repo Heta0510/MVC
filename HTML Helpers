@@ -130,3 +130,6 @@ Standard HTML helpers-
         }
 
 2.2)Strongly Type HTML helpers:
+How To use?
+It uses lambda expressions
+@Html.TextBoxFor(model=>model.property)
