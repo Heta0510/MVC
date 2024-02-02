@@ -133,3 +133,83 @@ Standard HTML helpers-
 How To use?
 It uses lambda expressions
 @Html.TextBoxFor(model=>model.property)
+
+@using StronglyTypedhelpers.Models
+@model Employee
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("myForm"))
+        {
+        @Html.TextBoxFor(x => x.Name) 
+        <br/>
+        <br/>
+        @Html.TextBoxFor(x => x.Address)
+        <br/>
+        <br/>
+        @Html.CheckBoxFor(x => x.IsEmployee)
+            <br/>
+            <br/>
+        <input type="submit" value="Press me"/>
+        }
+    </div>
+</body>
+</html>
+
+Employee.cs(Model)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+
+
+namespace StronglyTypedhelpers.Models
+{
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public bool IsEmployee { get; set; }
+    }
+}
+
+HomeControllers.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using StronglyTypedhelpers.Models;
+
+namespace StronglyTypedhelpers.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            Employee emp = new Employee()
+            {
+                Address = "This is my Address",
+                IsEmployee = true,
+                Name="Heta"
+            };
+            return View(emp);
+        }
+
+        [HttpPost]
+        public ActionResult Index(Employee emp)
+        {
+            return View();
+        }
+    }
+}
