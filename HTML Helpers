@@ -213,3 +213,12 @@ namespace StronglyTypedhelpers.Controllers
         }
     }
 }
+
+2.3)Templated HTML helpers
+1)Used for data display and input
+2)It generate HTML automatically as per model property
+  Means
+  1)Calendar from date
+  2)Number from int
+  3)Checkbox from bool etc
+3)Can generate HTML for complete model with a single tag
