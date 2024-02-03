@@ -424,3 +424,10 @@ Edit.csHtml(View)
 </html>
 
 3)Custom HTML Helper
+What if you need something which built in HTML helpers do not provide?
+For example:
+1)@Html.Image
+2)@Html.AddressFormat() --> To display your custom address formate etc.
+The solution of above problem is custom html helpers.
+Means
+Creating your own HTML helpers as per the need.
