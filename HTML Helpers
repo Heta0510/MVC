@@ -338,3 +338,88 @@ Index.Html(View)
   1)@Html.Editor() --> Used to create input field using the single model property
   2)@Html.EditorFor() --> Strongly binding version of LastHelper
   3)@Html.EditorForModel() --> Used to create input field for entire model
+
+HomeConteroller
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using TemplatedHtmlHelper.Models;
+
+namespace TemplatedHtmlHelper.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            Employee emp = new Employee()
+            {
+                Id = 1,
+                Name = "Heta Patel",
+                Email = "heta@gmail.com",
+                DateOfBirth = DateTime.Now,
+                IsOnline = true
+            };
+            return View(emp);
+        }
+        public ActionResult Edit()
+        {
+            return View();
+        }
+    }
+}
+Employee.cs(Model)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel.DataAnnotations;
+
+namespace TemplatedHtmlHelper.Models
+{
+    public class Employee
+    {
+        public int Id { get; set; }
+
+        [Display(Name="Please enter your name")]
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public bool IsOnline { get; set; }
+
+        [Display(Name = "Date Of Birth")]
+        [DataType(DataType.Date)]
+        public DateTime DateOfBirth { get; set; }
+    }
+}
+Edit.csHtml(View)
+@model TemplatedHtmlHelper.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div> 
+        @Html.DisplayName("id") - @Html.Editor("Id")
+        <br />
+        <br />
+        @Html.DisplayNameFor(x=>x.Name) - @Html.EditorFor(x=>x.Name)
+        <br />
+        <br />
+        @Html.DisplayNameFor(x=>x.DateOfBirth) - @Html.EditorFor(x=>x.DateOfBirth)
+        <hr />
+        <hr />
+        @Html.EditorForModel()
+    </div>
+    
+</body>
+</html>
+
