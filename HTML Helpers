@@ -449,3 +449,12 @@ public static class CustomHelper
   2)Static method
   3)IHtmlString
   4)MvcHtmlString
+
+2)Using extension method
+public static class CustomHelper
+{
+  public static IHtmlString Image(this HtmlHelper helper,string src,string alt)
+  {
+     return new MvcHtmlString(string.Format("<img src={0}'
+  }
+}
