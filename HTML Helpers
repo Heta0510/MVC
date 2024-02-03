@@ -222,3 +222,17 @@ namespace StronglyTypedhelpers.Controllers
   2)Number from int
   3)Checkbox from bool etc
 3)Can generate HTML for complete model with a single tag
+
+Types of Templated HTML helpers
+1)Display
+  1)@Html.Display()
+  2)@Html.DisplayFor()
+  3)@Html.DisplayName()
+  4)@Html.DisplayNameFor()
+  5)@Html.DisplayText()
+  6)@Html.DisplayTextFor()
+  7)@Html.DisplayForModel()
+2)Edit/Input
+  1)@Html.Editor
+  2)@Html.EditorFor()
+  3)@Html.EditorForModel()
