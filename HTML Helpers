@@ -436,3 +436,16 @@ How To Create-
 There are two ways to create custom html helpers:
 1)Using static class and static method
 2)Using Extension method
+
+1)Using static class and static method
+public static class CustomHelper
+{
+  public static IHtmlString Label(string src,string alt)
+  {
+     return new MvcHtmlString(string.Format("<img src='{0}' alt='{1}'></img>",src,alt));
+  }
+}
+  1)Static class
+  2)Static method
+  3)IHtmlString
+  4)MvcHtmlString
