@@ -236,3 +236,12 @@ Types of Templated HTML helpers
   1)@Html.Editor
   2)@Html.EditorFor()
   3)@Html.EditorForModel()
+
+1)Display
+  1)@Html.DisplayName() --> Used to display only the name of model property.
+  2)@Html.DisplayNameFor() --> Strongly binding version of last helper.
+  3)@Html.DisplayText() --> Used to display only the value of model property.
+  4)@Html.DisplayTextFor() --> Stongly binding version of last helper.
+  5)@Html.Display() --> Used to display value with some extra functionality.
+  6)@Html.DisplayFor() --> Strongly binding version of last helper.
+  7)@Html.DisplayForModel() --> Used to display complete model data.
