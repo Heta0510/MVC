@@ -245,3 +245,96 @@ Types of Templated HTML helpers
   5)@Html.Display() --> Used to display value with some extra functionality.
   6)@Html.DisplayFor() --> Strongly binding version of last helper.
   7)@Html.DisplayForModel() --> Used to display complete model data.
+
+HomeController
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using TemplatedHtmlHelper.Models;
+
+namespace TemplatedHtmlHelper.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            Employee emp = new Employee()
+            {
+                Id = 1,
+                Name = "Heta Patel",
+                Email = "heta@gmail.com",
+                DateOfBirth = DateTime.Now,
+                IsOnline = true
+            };
+            return View(emp);
+        }
+    }
+}
+Employee.cs(Model)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel.DataAnnotations;
+
+namespace TemplatedHtmlHelper.Models
+{
+    public class Employee
+    {
+        public int Id { get; set; }
+
+        [Display(Name="Please enter your name")]
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public bool IsOnline { get; set; }
+
+        [Display(Name = "Date Of Birth")]
+        public DateTime DateOfBirth { get; set; }
+    }
+}
+Index.Html(View)
+@using TemplatedHtmlHelper.Models
+@model Employee
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @Html.DisplayName("Name")
+        <br/>
+        <br/>
+        @Html.DisplayNameFor(x=>x.DateOfBirth)
+
+        <br/>
+        <br/>
+<hr/>
+        @Html.DisplayText("Name")
+        <br />
+        <br />
+        @Html.DisplayTextFor(x=>x.DateOfBirth)
+        <br />
+        <br />
+        <hr />
+        @Html.Display("Name")
+        <br />
+        <br />
+        @Html.DisplayFor(x=>x.Email)
+        <hr />
+        <hr />
+        @Html.DisplayForModel()
+    </div>
+</body>
+</html>
+
+2)Edit/input
+  1)@Html.Editor() --> Used to create input field using the single model property
+  2)@Html.EditorFor() --> Strongly binding version of LastHelper
+  3)@Html.EditorForModel() --> Used to create input field for entire model
