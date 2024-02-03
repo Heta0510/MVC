@@ -431,3 +431,8 @@ For example:
 The solution of above problem is custom html helpers.
 Means
 Creating your own HTML helpers as per the need.
+
+How To Create-
+There are two ways to create custom html helpers:
+1)Using static class and static method
+2)Using Extension method
